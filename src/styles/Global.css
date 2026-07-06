@@ -57,6 +57,15 @@
     interpolate-size: allow-keywords;
   }
 }
+/* Swap between Dark and Light Theme */
+body,
+#root,
+.app__container {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  transition: var(--theme-transition);
+}
 
 body {
   /* 4. Increase line-height */
