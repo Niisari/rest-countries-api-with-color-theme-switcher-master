@@ -1,0 +1,140 @@
+.controls__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  padding: 2.5rem 1rem;
+}
+
+.search__bar--wrapper {
+  background-color: var(--element-bg);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 30rem;
+  padding: 0 1.5rem;
+}
+
+.search__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.search__bar--wrapper input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 0.875rem;
+  width: 100%;
+  padding: 1.125rem 0 1.125rem 1.5rem;
+}
+
+.filter__wrapper {
+  width: 12.5rem;
+  font-family: inherit;
+}
+
+.filter__wrapper,
+.filter__options {
+  background-color: var(--element-bg);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.filter__trigger {
+  anchor-name: --region-dropdown-trigger;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.chevron__icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.chevron__icon.open {
+  transform: rotate(180deg);
+}
+
+.filter__options {
+  position: fixed;
+  position-anchor: --region-dropdown-trigger;
+  top: anchor(bottom);
+  margin-top: 0.5rem;
+  left: anchor(left);
+  width: anchor-size(width);
+
+  border-radius: 5px;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 10;
+
+  li {
+    list-style: none;
+    padding: 0 0 0 1.5rem;
+  }
+}
+
+.filter__text {
+  font-weight: 300;
+}
+
+.countries__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  gap: 2.5rem;
+  padding: 0 3.5rem 2.5rem 3.5rem;
+
+  place-items: center;
+
+  .country__info {
+    background-color: var(--element-bg);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 5px 5px;
+    padding: 1.5rem;
+  }
+
+  .country__flag {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .country__name {
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+
+  .info__item {
+    font-weight: 300;
+  }
+
+  .info__item strong {
+    font-weight: 600;
+  }
+}
