@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Header from "./components/Header.jsx";
+import Dashboard from "./features/dashboard/Dashboard.jsx";
 
 import "./styles/Global.css";
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="app__container">
       <Header theme={theme} onToggleTheme={toggleTheme} />
+      <Dashboard />
     </div>
   );
 }
