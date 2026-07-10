@@ -111,17 +111,24 @@
   padding: 0 3.5rem 2.5rem 3.5rem;
 
   place-items: center;
+  align-items: stretch;
 
   .country__info {
     background-color: var(--element-bg);
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 5px 5px;
     padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
 
   .country__flag {
-    width: 100%;
     border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .country__name {
@@ -137,4 +144,11 @@
   .info__item strong {
     font-weight: 600;
   }
+}
+
+.flag__wrapper {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
 }
