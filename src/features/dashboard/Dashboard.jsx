@@ -36,7 +36,7 @@ export default function Dashboard() {
           onBorderClick={(borderCountry) => setSelectedCountry(borderCountry)}
         />
       ) : (
-        /* --- VIEW 2: MAIN GRID OVERVIEW --- */
+        /* --- VIEW 2: DASHBOARD --- */
         <>
           <div className="controls__row">
             <div className="search__bar--wrapper">
@@ -60,7 +60,7 @@ export default function Dashboard() {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
             </div>
-
+            {/* --- FILTER DROPDOWN --- */}
             <div className="filter__wrapper">
               <button
                 type="button"
@@ -79,7 +79,7 @@ export default function Dashboard() {
                   />
                 </svg>
               </button>
-
+              {/* --- DROPDOWN OPTIONS --- */}
               {isDropdownOpen && (
                 <div className="filter__options">
                   <a
