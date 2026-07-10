@@ -30,6 +30,7 @@ export default function Dashboard() {
       {selectedCountry ? (
         /* --- VIEW 1: DETAILED COUNTRY SCREEN --- */
         <DetailView
+          key={selectedCountry.alpha3Code || selectedCountry.name}
           country={selectedCountry}
           allCountries={countryData}
           onBack={() => setSelectedCountry(null)}
