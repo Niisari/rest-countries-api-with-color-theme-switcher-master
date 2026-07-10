@@ -17,7 +17,8 @@
 
   height: 6rem;
   padding: 0 1rem;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--element-bg);
 }
 
 .header__title {
@@ -35,4 +36,11 @@
   height: 18px;
   display: inline-block;
   transition: fill 0.2s ease;
+}
+
+@media only screen and (min-width: 48rem) {
+  .header__content {
+    padding: 0 3.5rem;
+    height: 4rem;
+  }
 }
