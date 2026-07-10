@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
 }
 
@@ -46,11 +46,12 @@
   flex: 1 1 450px;
   max-width: 560px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  aspect-ratio: 16 / 10;
 }
 
 .detail__flag {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -62,7 +63,7 @@
 .detail__name {
   font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: var(--text-color);
 }
 
@@ -134,4 +135,10 @@
   font-size: 0.95rem;
   font-weight: 300;
   opacity: 0.7;
+}
+
+@media only screen and (min-width: 64rem) {
+  .detail__layout {
+    gap: 8rem;
+  }
 }
