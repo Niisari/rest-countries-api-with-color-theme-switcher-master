@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 30rem;
+  max-width: 25rem;
   padding: 0 1.5rem;
 }
 
@@ -34,7 +34,7 @@
   font-family: inherit;
   font-size: 0.875rem;
   width: 100%;
-  padding: 1.125rem 0 1.125rem 1.5rem;
+  padding: 1rem 0 1rem 1.5rem;
 }
 
 .filter__wrapper {
@@ -151,4 +151,10 @@
   width: 100%;
   overflow: hidden;
   flex-shrink: 0;
+}
+
+@media only screen and (min-width: 48rem) {
+  .controls__row {
+    padding: 2.5rem 3.5rem 2.5rem 3.5rem;
+  }
 }
