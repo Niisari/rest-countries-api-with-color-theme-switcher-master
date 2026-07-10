@@ -166,4 +166,14 @@
   .countries__grid {
     grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
   }
+
+  .search__bar--wrapper {
+    max-width: 31rem;
+  }
+}
+
+@media only screen and (min-width: 80rem) {
+  .countries__grid {
+    gap: 3.5rem;
+  }
 }
