@@ -1,0 +1,134 @@
+.detail__container {
+  padding: 4rem 5%;
+}
+
+.back__button {
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.6rem 2rem;
+  border-radius: 2px;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 5rem;
+  transition: transform 0.1s ease;
+}
+
+.back__button:active {
+  transform: scale(0.97);
+}
+
+.back__icon {
+  width: 18px;
+  height: 18px;
+}
+
+.detail__layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.detail__flag-wrapper {
+  flex: 1 1 450px;
+  max-width: 560px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.detail__flag {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.detail__content {
+  flex: 1 1 450px;
+}
+
+.detail__name {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.detail__columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.detail__col {
+  flex: 1 1 200px;
+}
+
+.detail__item {
+  font-size: 1rem;
+  margin: 0.6rem 0;
+  font-weight: 300;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.detail__item strong {
+  font-weight: 600;
+}
+
+/* Borders Segment row block styling */
+.detail__borders {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.borders__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.borders__list {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.border__tag {
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 0.4rem 1.4rem;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 300;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.border__tag:hover {
+  transform: translateY(-1px);
+}
+
+.no-borders {
+  font-size: 0.95rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
