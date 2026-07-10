@@ -21,6 +21,10 @@
   transition: transform 0.1s ease;
 }
 
+.back__button:hover {
+  transform: scale(1.02);
+}
+
 .back__button:active {
   transform: scale(0.97);
 }
@@ -86,7 +90,6 @@
   font-weight: 600;
 }
 
-/* Borders Segment row block styling */
 .detail__borders {
   display: flex;
   align-items: center;

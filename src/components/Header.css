@@ -38,6 +38,10 @@
   transition: fill 0.2s ease;
 }
 
+.theme__toggle--btn:hover {
+  transform: scale(1.05);
+}
+
 @media only screen and (min-width: 48rem) {
   .header__content {
     padding: 0 3.5rem;
