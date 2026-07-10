@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   gap: 2.5rem;
   padding: 2.5rem 1rem;
+
+  position: relative;
+  z-index: 1000;
 }
 
 .search__bar--wrapper {
@@ -92,7 +95,8 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  z-index: 10;
+
+  animation: fadeInUp 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 
   a {
     text-decoration: none;
@@ -173,6 +177,11 @@
   transition: transform 0.4s ease;
 }
 
+.controls__row,
+.countries__grid {
+  animation: fadeInUp 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
 @media only screen and (max-width: 23.375rem) {
   .countries__grid {
     padding: 0 2rem 2.5rem 2rem;
@@ -198,5 +207,16 @@
 @media only screen and (min-width: 80rem) {
   .countries__grid {
     gap: 3.5rem;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Starts slightly lower down the screen */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Glides up perfectly into place */
   }
 }
