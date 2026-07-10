@@ -94,8 +94,9 @@
   gap: 0.5rem;
   z-index: 10;
 
-  li {
-    list-style: none;
+  a {
+    text-decoration: none;
+    color: var(--text-color);
     padding: 0 0 0 1.5rem;
   }
 }
