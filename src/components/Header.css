@@ -17,7 +17,7 @@
 
   height: 6rem;
   padding: 0 1rem;
-  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0.25rem 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
   background-color: var(--element-bg);
 }
 
@@ -32,8 +32,8 @@
 }
 
 .moon__icon {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   display: inline-block;
   transition: fill 0.2s ease;
 }
